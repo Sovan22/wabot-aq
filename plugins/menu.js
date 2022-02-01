@@ -3,30 +3,16 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
   'main': 'Main',
-  'game': 'Game',
-  'xp': 'Exp & Limit',
   'sticker': 'Sticker',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
   'admin': 'Admin',
   'group': 'Group',
-  'premium': 'Premium',
   'internet': 'Internet',
-  'anonymous': 'Anonymous Chat',
-  'nulis': 'MagerNulis & Logo',
   'downloader': 'Downloader',
   'tools': 'Tools',
   'fun': 'Fun',
-  'database': 'Database',
   'vote': 'Voting',
-  'absen': 'Absen',
-  'quran': 'Al Qur\'an',
-  'jadibot': 'Jadi Bot',
   'owner': 'Owner',
   'host': 'Host',
-  'advanced': 'Advanced',
-  'info': 'Info',
-  '': 'No Category',
 }
 const defaultMenu = {
   before: `
