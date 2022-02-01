@@ -11,7 +11,6 @@ let tags = {
   'tools': 'Tools',
   'fun': 'Fun',
   'vote': 'Voting',
-  'absen': 'Absen',
   'info': 'Info',
   '': 'No Category',
 }
