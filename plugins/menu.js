@@ -33,12 +33,18 @@ const defaultMenu = {
 ╭─「 %me 」
 │ Hey, %name!
 │
-|
+│
 │ Uptime: *%uptime (%muptime)*
 ╰────
-`
+%readmore`.trimStart(),
+  header: '╭─「 %category 」',
+  body: '│ • %cmd %islimit %isPremium',
+  footer: '╰────\n',
+  after: `
+*%npmname@^%version*
+${'```%npmdesc```'}
+`,
 }
-
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
